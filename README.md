@@ -4,8 +4,6 @@
 
 ## Table of Contents
 * [General Info](#general-information)
-* [Acknowledgements](#acknowledgements)
-<!-- * [License](#license) -->
 
 
 ## General Information
@@ -15,12 +13,10 @@
 -used conditional rendering and ternary operator
 -used some npm packages such az Axios for fetching data and Toastify to alert messages .
 -create responsible design for mobil device with media query 
--used rejex for validation input
+-used regex for validation input
 -use Memoization for improving the performance
-
-## Acknowledgements
 I am also able to implement this project with TypeScript and some library for Css.
-I can used Routing for SPA application
+I can use Routing for SPA application and use another hooks such as useCalback and useMemo 
 
 # Getting Started with Create React App
 
