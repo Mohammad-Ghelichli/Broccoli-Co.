@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { useContext } from 'react'
 import { themeContext } from '../../Context/ThemeProvider'
 import "./SuccessWindow.css"
@@ -13,4 +13,4 @@ const SuccessWindow = () => {
   )
 }
 
-export default SuccessWindow
+export default memo(SuccessWindow) 

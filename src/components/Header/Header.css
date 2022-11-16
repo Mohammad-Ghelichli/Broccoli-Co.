@@ -1,21 +1,21 @@
-header{
-    width:100%;
-    height: 100px;
-    vertical-align: baseline;
-    background-color:#272829;
-    color: #F35A57;
-    font-size: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    padding-left:15% ;
-    position: fixed;
+header {
+  width: 100%;
+  height: 100px;
+  vertical-align: baseline;
+  background-color: #272829;
+  color: #f35a57;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15%;
+  position: fixed;
 }
 /* responsive design */
 
 @media screen and (max-width: 480px) {
-    header{
-        font-size: 18px;
-height: 80px;
-    }
+  header {
+    font-size: 18px;
+    height: 80px;
   }
+}
