@@ -3,8 +3,9 @@ import "./Content.css";
 import { themeContext } from "../../Context/ThemeProvider";
 import { useContext } from "react";
 import Form from "./Form";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer} from "react-toastify";
 import SuccessWindow from "./SuccessWindow";
+
 
 const Content = () => {
   ////theme context////

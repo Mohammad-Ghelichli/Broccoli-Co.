@@ -10,3 +10,10 @@
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+@media screen and (max-width: 480px) {
+    .homePage{
+        
+        height: 100%;
+        
+    }
+  }

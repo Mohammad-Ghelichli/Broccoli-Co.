@@ -1,11 +1,10 @@
 .main {
   background-color: #e9eef2;
   width: 100%;
-  flex-grow: 1;
+  flex: 1;
   text-align: center;
   vertical-align: center;
   margin-top: 100px;
-  
 }
 .first_title {
   color: #f35a57;
@@ -53,4 +52,8 @@
     width: 20px;
     height: 20px;
   }
+}
+.main {
+  flex: 1;
+  margin-top: 80px;
 }
