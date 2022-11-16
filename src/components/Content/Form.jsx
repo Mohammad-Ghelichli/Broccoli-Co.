@@ -1,27 +1,26 @@
-import React from "react";
+import React, { memo } from "react";
 import "./Form.css";
 import { useEffect, useRef, useContext } from "react";
 import { themeContext } from "../../Context/ThemeProvider";
 import { useState } from "react";
-import { validation } from "./Validation";
+import { validation } from "../../utils/Validation";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 const Form = () => {
-  /////----state----/////
-  const [loading, setLoading] = useState(false);
+  ////----state----////
   const [data, setData] = useState({
     fullName: "",
     email: "",
     confirmEmail: "",
   });
-
-  const [errors, setErrors] = useState({ fullName: "name is incuired" });
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({ fullName: "Name is incuired" });
   const [touched, setTouched] = useState({});
   const [complet, setComplet] = useState(true);
 
-  /////----handle errors and validation----/////
+  ////----handle errors and validation----////
   const changHandler = (event) => {
     setData({ ...data, [event.target.name]: event.target.value });
   };
@@ -52,7 +51,7 @@ const Form = () => {
     }
   }, [errors]);
 
-  /////----submit form----/////
+  ////----submit form----////
   const submitHandler = (event) => {
     event.preventDefault();
     if (Object.keys(errors).length) {
@@ -87,7 +86,7 @@ const Form = () => {
   /////----theme context----/////
   const { state, dispatch } = useContext(themeContext);
 
-  /////----input Focus----/////
+  /////----input autoFocus----/////
 
   const nameInput = useRef(null);
   useEffect(() => {
@@ -156,4 +155,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default memo(Form);

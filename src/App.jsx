@@ -8,15 +8,24 @@ import { themeContext } from "./Context/ThemeProvider";
 
 const App = () => {
   const { state, dispatch } = useContext(themeContext);
-
+  const homeHandler = (e) => {
+    dispatch({ type: "HOME" });
+    e.stopPropagation()
+  };
   return (
-    <div className="homePage">
-      <div style={{ opacity:state.pressButton && '0.6'}}>
+    <div className="homePage" >
+      <div
+        onClick={homeHandler}
+        style={{ opacity: state.view !== "home" ? "0.8" : "1" }}
+      >
         <Header />
       </div>
       <Content />
-      <div style={{ opacity:state.pressButton && '0.6'}}>
-      <Footer />
+      <div
+       onClick={homeHandler}
+        style={{ opacity: state.view !== "home" ? "0.8" : "1" }}
+      >
+        <Footer />
       </div>
     </div>
   );

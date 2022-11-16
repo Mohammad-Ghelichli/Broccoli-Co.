@@ -3,12 +3,11 @@ import "./Content.css";
 import { themeContext } from "../../Context/ThemeProvider";
 import { useContext } from "react";
 import Form from "./Form";
-import { ToastContainer} from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import SuccessWindow from "./SuccessWindow";
 
-
 const Content = () => {
-  ////theme context////
+  ////----theme context----////
   const { state, dispatch } = useContext(themeContext);
 
   const clickHandler = () => {
@@ -18,7 +17,7 @@ const Content = () => {
   return (
     <div className="main">
       <ToastContainer
-      className='notify'
+        className="notify"
         position="top-right"
         autoClose={3000}
         hideProgressBar={false}
@@ -29,22 +28,24 @@ const Content = () => {
       />
       <p
         className="first_title"
-        style={{ opacity: state.pressButton && "0.6" }}
+        style={{ opacity: state.view !== "home" ? "0.8" : "1" }}
       >
         A better way <br />
         to enjoy every day.
       </p>
       <p
         className="second_title"
-        style={{ opacity: state.pressButton && "0.6" }}
+        style={{ opacity: state.view !== "home" ? "0.8" : "1" }}
       >
         Be the first to know when we launch
       </p>
       <button id="request_button" onClick={clickHandler}>
         Request an Invite
       </button>
+
       {state.view === "REQUEST_FORM" && <Form />}
-      {state.view === "SUCCESS" && <SuccessWindow/>}
+      
+      {state.view === "SUCCESS" && <SuccessWindow />}
     </div>
   );
 };
