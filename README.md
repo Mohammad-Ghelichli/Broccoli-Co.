@@ -1,6 +1,6 @@
 # Project Name
 > Blinq technical Test
-> Live demo [_here_](https://broccoli-co-blinq.netlify.app/).
+> Live demo [_here_](https://broccoli-co-blinq.netlify.app).
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -8,15 +8,14 @@
 
 ## General Information
 -This project implemented by react.js and javaScript. 
--used jsx for creating reusable component .
 -In this Project tried to use all of Hooks such as (useState, useEffect, useRef, useContext, useReducer).
 -used conditional rendering and ternary operator
 -used some npm packages such az Axios for fetching data and Toastify to alert messages .
 -create responsible design for mobil device with media query 
 -used regex for validation input
 -use Memoization for improving the performance
-I am also able to implement this project with TypeScript and some library for Css.
-I can use Routing for SPA application and use another hooks such as useCalback and useMemo 
+I am also able to implement this project with TypeScript and some library for Css such as Material UI and preprocessor css such as Sass.
+I can use Routing for SPA application and use another hooks such as useCalback and useMemo.
 
 # Getting Started with Create React App
 
