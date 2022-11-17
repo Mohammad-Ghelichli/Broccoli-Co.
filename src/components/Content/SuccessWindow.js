@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { themeContext } from '../../Context/ThemeProvider'
 import "./SuccessWindow.css"
 const SuccessWindow = () => {
-    const {state,dispatch}=useContext(themeContext)
+    const {dispatch}=useContext(themeContext)
   return (
     <div className='success_container'>
     <h1>All Done</h1>

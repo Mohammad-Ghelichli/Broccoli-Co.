@@ -17,7 +17,7 @@ export const validation = (data) => {
   if (!data.email) {
     errors.email = "Email is Required";
   } else if (
-    !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(data.email)
+    !/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(data.email)
   ) {
     errors.email = "Email is INVALID !";
   } else {

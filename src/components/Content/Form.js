@@ -41,7 +41,7 @@ const Form = () => {
     if (touched.confirmEmail) {
       toast.error(errors.confirmEmail);
     }
-  }, [touched]);
+  },[touched]);
 
   useEffect(() => {
     if (Object.keys(errors).length) {
@@ -71,7 +71,7 @@ const Form = () => {
         },
       })
         .then((response) => {
-          if (response.status == 200) {
+          if (response.status === 200) {
             toast.success("successful request");
             dispatch({ type: "SUCCESS" });
             setLoading(false);
