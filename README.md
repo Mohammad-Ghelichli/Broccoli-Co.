@@ -17,6 +17,8 @@
 I am also able to implement this project with TypeScript and some library for Css such as Material UI and preprocessor css such as Sass.
 I can use Routing for SPA application and use another hooks such as useCalback and useMemo.
 ////
+about this page ...
+
 Blinq's color palette is used for the website theme.
 The buttons have a hover. After pressing the resquest button, the form appears using conditional rendering. And the auto focus is on the name field. For this reason, the error that the name is requierd is notified first. Errors are notified in two ways. Using Notify and message inline, all inputs are validated. At first, the send button is inactive. After filling all the fields correctly, the send button becomes active. After the send button is activated, using Axios has sent the request and the send button will be in waiting mode. After the request is sent correctly and the response is 200, a success message will be notified and another window will appear.
 
